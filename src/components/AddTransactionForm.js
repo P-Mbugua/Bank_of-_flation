@@ -18,7 +18,7 @@ function AddTransactionForm({ onAddTransaction }) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    fetch('https://jsonplaceholder.typicode.com/posts', {
+    fetch('http://localhost:8001/transactions', {
       method: 'POST',
       body: JSON.stringify(formData),
       headers: {
